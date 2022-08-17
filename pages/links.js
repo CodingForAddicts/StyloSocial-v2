@@ -54,7 +54,7 @@ export default function Home() {
 	  </SignUpButton>
 	</p>
 	</SignedOut >
-	<div>
+	<div style="border-radius: 10px; width: 100%; overflow: hidden;">
 	<SignedIn >
 
 
