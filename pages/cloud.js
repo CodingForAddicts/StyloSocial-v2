@@ -57,8 +57,8 @@ export default function Home() {
   }, [vantaEffect]);
   return ( 
 	
-	<div ref = { vantaRef } >
-	<div className = { styles.container } >
+	<div>
+	<div>
 	
 	<Head >
 	<title > StyloSocial < /title> 
@@ -88,7 +88,7 @@ export default function Home() {
 	
 
 	
-	<iframe src="https://cloud.stylo.social/index.php/s/RCrzWD6DdKY63kC" frameBorder="0" height="440px" width="80%"></iframe> 
+	<iframe src="https://cloud.stylo.social/index.php/s/RCrzWD6DdKY63kC" frameBorder="0" height="440px" width="100%"></iframe> 
 	
 
 	</SignedIn>
