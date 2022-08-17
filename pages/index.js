@@ -88,21 +88,21 @@ export default function Home() {
     <a  className={styles.card}>
     <h2> Cloud ☁️ &rarr; </h2> <p>Cours & fiches</p> 
     </a>
-    </link>
+    </Link>
 
     <Link href="/polls">
     <a className={ styles.card }>
     <h2> Sondages 📊 &rarr;</h2> 
     <p> Donnez votre avis !</p>
     </a>
-    </link>
+    </Link>
 
     <Link href="/links">
     <a className = { styles.cardB } >
     <h2 > Liens 🔗 &rarr;</h2> 
     <p> Manuels corrigés, manuels sans se connecter, contacts...</p> 
     </a>
-    </link>
+    </Link>
 
     </SignedIn>
 
