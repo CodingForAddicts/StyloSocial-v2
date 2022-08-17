@@ -86,16 +86,16 @@ export default function Home() {
     <SignedIn >
 
     <a href="..." className={styles.card}>
-    <h2> Cloud &rarr;</h2> <p>Lorem ipsum dolor ipsi ratum</p> </a>
+    <h2> Cloud ☁️ &rarr; </h2> <p>Cours & fiches</p> </a>
 
     <a href="..."className={ styles.card }>
-    <h2> Sondages &rarr;</h2> 
+    <h2> Sondages 📊 &rarr;</h2> 
     <p> Donnez votre avis !</p>
     </a>
 
-    <a href = "..."className = { styles.card } >
-    <h2 > Liens &rarr;</h2> 
-    <p> Manuels corrigés, manuels sans se connecter </p> 
+    <a href = "..."className = { styles.cardB } >
+    <h2 > Liens 🔗 &rarr;</h2> 
+    <p> Manuels corrigés, manuels sans se connecter, contacts...</p> 
     </a>
 
     </SignedIn>
