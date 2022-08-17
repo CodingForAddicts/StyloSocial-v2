@@ -55,7 +55,6 @@ export default function Home() {
     };
   }, [vantaEffect]);
   return (
-    <ClerkProvider>
     <div ref={vantaRef}>
     <div className={styles.container} >
       <Head>
@@ -95,6 +94,12 @@ export default function Home() {
           >
             <h2>Liens &rarr;</h2>
             <p>Lorem ipsum dolor ipsi ratum </p>
+            <SignedOut>
+              <Link href="/sign-in">Se connecter</Link>
+            </SignedOut>
+            <SignedIn>
+              <UserButton userProfileURL="/user" afterSignOutAll="/" afterSignOutOneUrl="/" />
+            </SignedIn>
           </a>
       
         </div>
@@ -106,7 +111,6 @@ export default function Home() {
     </div>
     
     </div>
-    </ClerkProvider>
     
     
     
