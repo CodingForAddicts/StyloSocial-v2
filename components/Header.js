@@ -22,7 +22,12 @@ const Header = () => (
     </div>
     <div className={styles.right}>
       <SignedOut>
-        <SignInButton />
+        <SignInButton mode="modal">
+          <button className="btn">
+            Sign in
+          </button>
+        </SignInButton>
+
       </SignedOut>
       <SignedIn>
         <UserButton userProfileURL="/user" afterSignOutAll="/" afterSignOutOneUrl="/" />
