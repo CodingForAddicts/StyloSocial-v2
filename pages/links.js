@@ -30,43 +30,37 @@ export default function Home() {
   return ( 
 	
 	
-	<div  >
-	
-	<Head >
-	<title > StyloSocial < /title> 
-	<link rel = "icon"
-	href = "/favicon.ico"/>
-	
-	</Head> 
-	<Layout >
-	
-	<main  >
-	<SignedOut >
-	<h1 className={styles.title}>
-	  Bienvenue sur <a href="https://stylo.social">StyloSocial!</a>
-	</h1>
-	
-	<p className={styles.description}>
-	  Pour commencer, <SignUpButton mode="modal">
-		<button className={styles.btn}>
-		  créez un compte
-		</button>
-	  </SignUpButton>
-	</p>
-	</SignedOut >
-	<div style="border-radius: 10px; width: 100%; overflow: hidden;">
-	<SignedIn >
-
-
-	<iframe src="https://cloud.stylo.social/index.php/s/RCrzWD6DdKY63kC" frameBorder="0" height="500px" width="100%"></iframe>
-
-	</SignedIn>
-
-	</div>
-	</main>
-
-	</Layout>
-
+	<div>
+		<Head>
+			<title> StyloSocial </title> 
+			<link rel = "icon"
+			href = "/favicon.ico"/>
+		</Head> 
+		<Layout>
+			<main>
+			
+				<SignedOut>
+					<h1 className={styles.title}>
+	    		    Bienvenue sur <a href="https://stylo.social">StyloSocial!</a>
+					</h1>
+					<p className={styles.description}>
+	    		    Pour commencer, 
+					<SignUpButton mode="modal">
+						<button className={styles.btn}>
+		    	    		créez un compte
+						</button>
+	    			 </SignUpButton>
+					 </p>
+				</SignedOut >
+				
+				<div style="border-radius: 10px; width: 500px ; overflow: hidden;">
+					<SignedIn >
+						<iframe src="https://cloud.stylo.social/index.php/s/RCrzWD6DdKY63kC" frameBorder="0" height="500px" width="100%"></iframe>
+					</SignedIn>
+				</div>
+				
+			</main>
+		</Layout>
 	</div>
 	
 
