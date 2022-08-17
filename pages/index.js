@@ -6,6 +6,7 @@ import * as THREE from "three";
 import Image from 'next/image'
 import Layout from '../components/Layout'
 import { withServerSideAuth } from "@clerk/nextjs/ssr";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 
 export const getServerSideProps = withServerSideAuth();
 
