@@ -98,7 +98,7 @@ export default function Home() {
     
 
     
-    <a href="https://www.stylo.social/links className = { styles.cardB } >
+    <a href="https://www.stylo.social/links" className = { styles.cardB} >
     <h2 > Liens 🔗 &rarr;</h2> 
     <p> Manuels corrigés, manuels sans se connecter, contacts...</p> 
     </a>
