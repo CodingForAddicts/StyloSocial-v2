@@ -31,47 +31,13 @@ export default function Home() {
   return ( 
 	
 	<div>
-	<div>
+	  <main>
+		<div>
+		  <iframe src="https://cloud.stylo.social/index.php/s/RCrzWD6DdKY63kC" frameBorder="0" height="500px" width="100%"></iframe>  
+		</div>
+		
 	
-	<Head >
-	<title > StyloSocial < /title> 
-	<link rel = "icon"
-	href = "/favicon.ico"/>
-	
-	</Head> 
-	<Layout >
-	
-	<main className = { styles.main } >
-	<SignedOut >
-	<h1 className={styles.title}>
-	  Bienvenue sur <a href="https://stylo.social">StyloSocial!</a>
-	</h1>
-	
-	<p className={styles.description}>
-	  Pour commencer, <SignUpButton mode="modal">
-		<button className={styles.btn}>
-		  créez un compte
-		</button>
-	  </SignUpButton>
-	</p>
-	</SignedOut >
-	<div  >
-	<SignedIn >
-
-	
-
-	
-	<iframe src="https://cloud.stylo.social/index.php/s/RCrzWD6DdKY63kC" frameBorder="0" height="440px" width="100%"></iframe> 
-	
-
-	</SignedIn>
-
-	</div>
-	</main>
-
-	</Layout>
-
-	</div>
+	  </main>
 	</div>
 
   );
