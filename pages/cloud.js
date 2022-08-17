@@ -82,7 +82,7 @@ export default function Home() {
 	  </SignUpButton>
 	</p>
 	</SignedOut >
-	<div className = { styles.grid } >
+	<div  >
 	<SignedIn >
 
 	
