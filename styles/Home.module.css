@@ -40,7 +40,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -97,9 +97,28 @@
   -webkit-backdrop-filter: blur( 9px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
+  font-size: 16px;
 
 }
 
+.btn{
+  padding: 7px 16px;
+  background: rgba( 255, 255, 255, 0.25 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 9px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: #e6eafb;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  color: #5700ff;
+  border-color: #6b1cb6;
+}
 
 
 .card:hover,

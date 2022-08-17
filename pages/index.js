@@ -7,7 +7,7 @@ import Image from 'next/image'
 import Layout from '../components/Layout'
 import { withServerSideAuth } from "@clerk/nextjs/ssr";
 import Link from 'next/link'
-import { ClerkProvider, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { ClerkProvider, SignedIn, SignedOut, UserButton, SignUpButton, SignInButton } from "@clerk/nextjs";
 
 export const getServerSideProps = withServerSideAuth();
 
@@ -44,9 +44,9 @@ export default function Home() {
           midtoneColor: 0x1c28e8,
           lowlightColor: 0x5342b1,
           baseColor: 0xae65d2,
-          blurFactor: 0.90,
+          blurFactor: 1,
           speed: 1.5,
-          zoom: 0.4,
+          zoom: 0.9,
         })
       );
     }
@@ -55,75 +55,62 @@ export default function Home() {
       if (vantaEffect) vantaEffect.destory();
     };
   }, [vantaEffect]);
-  return ( <
-    div ref = { vantaRef } >
-    <
-    div className = { styles.container } >
-    <
-    Head >
-    <
-    title > StyloSocial < /title> <
-    link rel = "icon"
-    href = "/favicon.ico" / >
-    <
-    /Head> <
-    Layout >
-    <
-    main className = { styles.main } >
-    <
-    div className = { styles.grid } >
-    <
-    SignedIn >
+  return ( 
+    
+    <div ref = { vantaRef } >
+    <div className = { styles.container } >
+    
+    <Head >
+    <title > StyloSocial < /title> 
+    <link rel = "icon"
+    href = "/favicon.ico"/>
+    
+    </Head> 
+    <Layout >
+    
+    <main className = { styles.main } >
+    <SignedOut >
+    <h1 className={styles.title}>
+      Bienvenue sur <a href="https://stylo.social">StyloSocial!</a>
+    </h1>
+    
+    <p className={styles.description}>
+      Pour commencer, <SignUpButton mode="modal">
+        <button className={styles.btn}>
+          créez un compte
+        </button>
+      </SignUpButton> ou <SignInButton mode="modal">
+        <button className={styles.btn}>
+          connectez-vous
+        </button>
+      </SignInButton>
+    </p>
+    </SignedOut >
+    <div className = { styles.grid } >
+    <SignedIn >
 
-    <
-    a href = "..."
-    className = { styles.card } >
-    <
-    h2 > Cloud & rarr; < /h2> <
-    p > Lorem ipsum dolor ipsi ratum < /p> < /
-    a >
+    <a href="..." className={styles.card}>
+    <h2> Cloud &rarr;</h2> <p>Lorem ipsum dolor ipsi ratum</p> </a>
 
-    <
-    a href = "..."
-    className = { styles.card } >
-    <
-    h2 > Sondages & rarr; < /h2> <
-    p > Lorem ipsum dolor ipsi ratum < /p> < /
-    a >
+    <a href="..."className={ styles.card }>
+    <h2> Sondages &rarr;</h2> 
+    <p> Donnez votre avis !</p>
+    </a>
 
-    <
-    a href = "..."
-    className = { styles.card } >
-    <
-    h2 > Liens & rarr; < /h2> <
-    p > Lorem ipsum dolor ipsi ratum < /p> < /
-    a >
+    <a href = "..."className = { styles.card } >
+    <h2 > Liens &rarr;</h2> 
+    <p> Manuels corrigés, manuels sans se connecter </p> 
+    </a>
 
-    <
-    /SignedIn>
+    </SignedIn>
 
-    <
-    a href = "..."
-    className = { styles.card } >
-    <
-    h2 > Liens & rarr; < /h2> <
-    p > Lorem ipsum dolor ipsi ratum < /p> < /
-    a >
+    </div>
+    </main>
 
-    <
-    /div>
+    </Layout>
 
-    <
-    /main>
-
-    <
-    /Layout>
-
-    <
-    /div>
-
-    <
-    /div>
+    </div>
+    </div>
 
   );
 }

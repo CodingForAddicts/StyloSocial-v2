@@ -24,7 +24,7 @@ const Header = () => (
       <SignedOut>
         <SignInButton mode="modal">
           <button className={styles.btn}>
-            Sign in
+            Se connecter
           </button>
         </SignInButton>
 

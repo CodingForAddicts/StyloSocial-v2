@@ -1,11 +1,11 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 20px !important;
+  padding: 15px !important;
   background: rgba( 255, 255, 255, 0.25 );
 	backdrop-filter: blur( 20px );
 	-webkit-backdrop-filter: blur( 9px );
-	border-radius: 25px;
+	border-radius: 20px;
 	border: 1px solid rgba( 255, 255, 255, 0.18 );
   margin: 20px;
   margin-top: 0px;
@@ -24,6 +24,8 @@
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   font-weight: bold;
   color: #e6eafb;
+  font-size: 16px;
+  transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn:hover,
@@ -43,6 +45,7 @@
   margin-left: 12px;
   font-weight: bold;
   color: #e6eafb;
+  font-size: 16px;
 }
 
 .left,
