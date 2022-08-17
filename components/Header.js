@@ -6,9 +6,9 @@ import {
   RedirectToSignIn,
   SignedIn,
   SignedOut,
-  UserProfile
+  UserProfile,
   SignInButton,
-  UserButton,
+  UserButton
 } from "@clerk/nextjs";
 
 
