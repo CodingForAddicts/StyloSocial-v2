@@ -27,42 +27,80 @@ export default withAuth((req, res) => {
 
 
 export default function Home() {
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const vantaRef = useRef(null);
+  useEffect(() => {
+	if (!vantaEffect) {
+	  setVantaEffect(
+		FOG({
+		  el: vantaRef.current,
+		  THREE,
+		  mouseControls: true,
+		  touchControls: true,
+		  gyroControls: false,
+		  minHeight: 400.00,
+		  minWidth: 400.00,
+		  highlightColor: 0xff0068,
+		  midtoneColor: 0x1c28e8,
+		  lowlightColor: 0x5342b1,
+		  baseColor: 0xae65d2,
+		  blurFactor: 1,
+		  speed: 1.5,
+		  zoom: 0.5,
+		})
+	  );
+	}
+
+	return () => {
+	  if (vantaEffect) vantaEffect.destory();
+	};
+  }, [vantaEffect]);
   return ( 
 	
+	<div ref = { vantaRef } >
+	<div className = { styles.container } >
 	
-	<div>
-		<Head>
-			<title> StyloSocial </title> 
-			<link rel = "icon"
-			href = "/favicon.ico"/>
-		</Head> 
-		<Layout>
-			<main>
-			
-				<SignedOut>
-					<h1 className={styles.title}>
-	    		    Bienvenue sur <a href="https://stylo.social">StyloSocial!</a>
-					</h1>
-					<p className={styles.description}>
-	    		    Pour commencer, 
-					<SignUpButton mode="modal">
-						<button className={styles.btn}>
-		    	    		créez un compte
-						</button>
-	    			 </SignUpButton>
-					 </p>
-				</SignedOut >
-				
-				<div style="border-radius: 10px; width: 500px ; overflow: hidden;">
-					<SignedIn >
-						<iframe src="https://cloud.stylo.social/index.php/s/RCrzWD6DdKY63kC" frameBorder="0" height="500px" width="100%"></iframe>
-					</SignedIn>
-				</div>
-				
-			</main>
-		</Layout>
+	<Head >
+	<title > StyloSocial < /title> 
+	<link rel = "icon"
+	href = "/favicon.ico"/>
+	
+	</Head> 
+	<Layout >
+	
+	<main className = { styles.main } >
+	<SignedOut >
+	<h1 className={styles.title}>
+	  Bienvenue sur <a href="https://stylo.social">StyloSocial!</a>
+	</h1>
+	
+	<p className={styles.description}>
+	  Pour commencer, <SignUpButton mode="modal">
+		<button className={styles.btn}>
+		  créez un compte
+		</button>
+	  </SignUpButton>
+	</p>
+	</SignedOut >
+	<div className = { styles.grid } >
+	<SignedIn >
+
+
+	<a className={ styles.card }>
+	<h2> Il n'y a pas de sondages actuellement</h2> 
+	<p> Revenez plus tard 😉</p>
+	</a>
+
+
+	</SignedIn>
+
 	</div>
-	
+	</main>
+
+	</Layout>
+
+	</div>
+	</div>
 
   );
 }
