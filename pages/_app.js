@@ -54,15 +54,7 @@ function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
           </SignedIn>
           <SignedOut>
-            <main>
-              <p>
-                Please{' '}
-                <Link href="/sign-in">
-                  <a>Connectez-vous</a>
-                </Link>{' '}
-                pour acceder à cette page.
-              </p>
-            </main>
+            <RedirectToSignIn />
           </SignedOut>
         </>
       )}
