@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px !important;
+  background: rgba( 255, 255, 255, 0.25 );
+	backdrop-filter: blur( 20px );
+	-webkit-backdrop-filter: blur( 9px );
+	border-radius: 25px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  top: 20px; 
+  max-height: 60px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appName {
+  margin-left: 12px;
+  font-weight: bold;
+  color: #e6eafb;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right > :not(:first-child) {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+	padding: 2000px;
+  }
+}

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import FOG from "vanta/dist/vanta.fog.min";
 import * as THREE from "three";
 import Image from 'next/image'
+import Layout from '../components/Layout'
 
 export default function Home() {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -18,14 +19,14 @@ export default function Home() {
           touchControls: true,
           gyroControls: false,
           minHeight: 200.00,
-          minWidth: 300.00,
+          minWidth: 200.00,
           highlightColor: 0xff0068,
           midtoneColor: 0x1c28e8,
           lowlightColor: 0x5342b1,
           baseColor: 0xae65d2,
           blurFactor: 0.90,
-          speed: 1,
-          zoom: 0.20
+          speed: 1.5,
+          zoom: 0.4,
         })
       );
     }
@@ -35,12 +36,15 @@ export default function Home() {
     };
   }, [vantaEffect]);
   return (
-    <div className={styles.container}>
+    <div ref={vantaRef}>
+    <div className={styles.container} >
       <Head>
-        <title>Create Next App</title>
+        <title>StyloSocial</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main} ref={vantaRef}>
+      <Layout >
+      <main className={styles.main}  >
+      
         
       
         
@@ -74,10 +78,15 @@ export default function Home() {
             </p>
           </a>
         </div>
-
+        
       </main>
       
+      </Layout>
+      
     </div>
+    
+    </div>
+    
     
     
     
