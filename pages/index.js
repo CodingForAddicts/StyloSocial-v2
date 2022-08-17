@@ -5,6 +5,24 @@ import FOG from "vanta/dist/vanta.fog.min";
 import * as THREE from "three";
 import Image from 'next/image'
 import Layout from '../components/Layout'
+import { withServerSideAuth } from "@clerk/nextjs/ssr";
+
+export const getServerSideProps = withServerSideAuth();
+
+const apiSample = `
+import { withAuth } from "@clerk/nextjs/api";
+
+export default withAuth((req, res) => {
+  const { sessionId } = req.auth;
+
+  if (!sessionId) {
+    return res.status(401).json({ id: null });
+  }
+
+  return res.status(200).json({ id: sessionId });
+});
+`.trim();
+
 
 export default function Home() {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -50,6 +68,7 @@ export default function Home() {
         
       
         <div className={styles.grid}>
+        <SignedIn>
           <a href="..." className={styles.card}>
             <h2>Cloud &rarr;</h2>
             <p>Lorem ipsum dolor ipsi ratum </p>
@@ -67,6 +86,7 @@ export default function Home() {
             <h2>Liens &rarr;</h2>
             <p>Lorem ipsum dolor ipsi ratum </p>
           </a>
+          </SignedIn>
           <a
             href="..." 
             className={styles.card}
