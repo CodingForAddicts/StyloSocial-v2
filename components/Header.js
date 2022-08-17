@@ -7,6 +7,8 @@ import {
   SignedIn,
   SignedOut,
   UserProfile
+  SignInButton,
+  UserButton
 } from "@clerk/nextjs";
 
 
