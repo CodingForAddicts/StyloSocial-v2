@@ -79,11 +79,7 @@ export default function Home() {
         <button className={styles.btn}>
           créez un compte
         </button>
-      </SignUpButton> ou <SignInButton mode="modal">
-        <button className={styles.btn}>
-          connectez-vous
-        </button>
-      </SignInButton>
+      </SignUpButton>
     </p>
     </SignedOut >
     <div className = { styles.grid } >
