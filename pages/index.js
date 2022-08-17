@@ -46,7 +46,7 @@ export default function Home() {
           baseColor: 0xae65d2,
           blurFactor: 1,
           speed: 1.5,
-          zoom: 0.9,
+          zoom: 0.5,
         })
       );
     }
