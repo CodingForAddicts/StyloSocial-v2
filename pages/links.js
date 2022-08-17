@@ -87,7 +87,7 @@ export default function Home() {
 
 
 	<a className={ styles.card }>
-	<h2> Il n &apos; y a pas de sondages actuellement</h2> 
+	<h2> En construction </h2> 
 	<p> Revenez plus tard 😉</p>
 	</a>
 
