@@ -84,11 +84,11 @@ export default function Home() {
     </SignedOut >
     <div className = { styles.grid } >
     <SignedIn >
-    <Link href="/cloud">
-    <a  className={styles.card}>
+  
+    <a href="https://www.stylo.social/cloud" className={styles.card}>
     <h2> Cloud ☁️ &rarr; </h2> <p>Cours & fiches</p> 
     </a>
-    </Link>
+    
 
     <Link href="/polls">
     <a className={ styles.card }>
