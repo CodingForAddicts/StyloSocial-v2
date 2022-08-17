@@ -4,6 +4,11 @@
   height: 100vh;
 }
 
+.background {
+  padding: 0;
+  margin: 0;
+}
+
 .main {
   min-height: 80vh;
   padding: 4rem 0;
@@ -124,4 +129,40 @@
     flex-direction: column;
   }
 }
+@media (max-height: 600px) {
+  .card {
+  padding: 1rem;
+  margin: 0.5rem;
+  max-height: 110px;
+}
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.card p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.1;
+}
+
+}
+
+@media (max-height: 800px) {
+  .card {
+  padding: 25px;
+  margin: 0.5rem;
+  max-height: 110px;
+}
+.card h2 {
+  
+  
+}
+.card p {
+  
+ 
+  line-height: 1.1;
+}
+
+}
+
 

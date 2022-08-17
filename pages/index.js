@@ -18,8 +18,8 @@ export default function Home() {
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
+          minHeight: 400.00,
+          minWidth: 400.00,
           highlightColor: 0xff0068,
           midtoneColor: 0x1c28e8,
           lowlightColor: 0x5342b1,
@@ -67,16 +67,14 @@ export default function Home() {
             <h2>Liens &rarr;</h2>
             <p>Lorem ipsum dolor ipsi ratum </p>
           </a>
-      
           <a
             href="..." 
             className={styles.card}
           >
-            <h2>Contact &rarr;</h2>
-            <p>
-              Lorem ipsum dolor ipsi ratum 
-            </p>
+            <h2>Liens &rarr;</h2>
+            <p>Lorem ipsum dolor ipsi ratum </p>
           </a>
+      
         </div>
         
       </main>
