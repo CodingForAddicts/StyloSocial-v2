@@ -50,71 +50,80 @@ export default function Home() {
         })
       );
     }
-    
+
     return () => {
       if (vantaEffect) vantaEffect.destory();
     };
   }, [vantaEffect]);
-  return (
-    <div ref={vantaRef}>
-    <div className={styles.container} >
-      <Head>
-        <title>StyloSocial</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Layout >
-      <main className={styles.main}  >
-      
-        
-      
-        
-      
-        <div className={styles.grid}>
-        <SignedIn>
-          <a href="..." className={styles.card}>
-            <h2>Cloud &rarr;</h2>
-            <p>Lorem ipsum dolor ipsi ratum </p>
-          </a>
-      
-          <a href="..."  className={styles.card}>
-            <h2>Sondages &rarr;</h2>
-            <p>Lorem ipsum dolor ipsi ratum </p>
-          </a>
-      
-          <a
-            href="..." 
-            className={styles.card}
-          >
-            <h2>Liens &rarr;</h2>
-            <p>Lorem ipsum dolor ipsi ratum </p>
-          </a>
-          </SignedIn>
-          <a
-            href="..." 
-            className={styles.card}
-          >
-            <h2>Liens &rarr;</h2>
-            <p>Lorem ipsum dolor ipsi ratum </p>
-            <SignedOut>
-              <Link href="/sign-in">Se connecter</Link>
-            </SignedOut>
-            <SignedIn>
-              <UserButton userProfileURL="/user" afterSignOutAll="/" afterSignOutOneUrl="/" />
-            </SignedIn> 
-          </a>
-      
-        </div>
-        
-      </main>
-      
-      </Layout>
-      
-    </div>
-    
-    </div>
-    
-    
-    
-    
+  return ( <
+    div ref = { vantaRef } >
+    <
+    div className = { styles.container } >
+    <
+    Head >
+    <
+    title > StyloSocial < /title> <
+    link rel = "icon"
+    href = "/favicon.ico" / >
+    <
+    /Head> <
+    Layout >
+    <
+    main className = { styles.main } >
+    <
+    div className = { styles.grid } >
+    <
+    SignedIn >
+
+    <
+    a href = "..."
+    className = { styles.card } >
+    <
+    h2 > Cloud & rarr; < /h2> <
+    p > Lorem ipsum dolor ipsi ratum < /p> < /
+    a >
+
+    <
+    a href = "..."
+    className = { styles.card } >
+    <
+    h2 > Sondages & rarr; < /h2> <
+    p > Lorem ipsum dolor ipsi ratum < /p> < /
+    a >
+
+    <
+    a href = "..."
+    className = { styles.card } >
+    <
+    h2 > Liens & rarr; < /h2> <
+    p > Lorem ipsum dolor ipsi ratum < /p> < /
+    a >
+
+    <
+    /SignedIn>
+
+    <
+    a href = "..."
+    className = { styles.card } >
+    <
+    h2 > Liens & rarr; < /h2> <
+    p > Lorem ipsum dolor ipsi ratum < /p> < /
+    a >
+
+    <
+    /div>
+
+    <
+    /main>
+
+    <
+    /Layout>
+
+    <
+    /div>
+
+    <
+    /div>
+
   );
 }
