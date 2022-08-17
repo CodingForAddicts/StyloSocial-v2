@@ -85,15 +85,15 @@ export default function Home() {
     <div className = { styles.grid } >
     <SignedIn >
 
-    <a href="..." className={styles.card}>
+    <a href="/cloud" className={styles.card}>
     <h2> Cloud ☁️ &rarr; </h2> <p>Cours & fiches</p> </a>
 
-    <a href="..."className={ styles.card }>
+    <a href="/polls"className={ styles.card }>
     <h2> Sondages 📊 &rarr;</h2> 
     <p> Donnez votre avis !</p>
     </a>
 
-    <a href = "..."className = { styles.cardB } >
+    <a href = "/links"className = { styles.cardB } >
     <h2 > Liens 🔗 &rarr;</h2> 
     <p> Manuels corrigés, manuels sans se connecter, contacts...</p> 
     </a>
