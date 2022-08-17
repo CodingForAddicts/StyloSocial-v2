@@ -33,7 +33,14 @@ export default function Home() {
 	<div>
 	  <main>
 		<div>
-		  <iframe src="https://cloud.stylo.social/index.php/s/RCrzWD6DdKY63kC" frameBorder="0" height="100%" width="100%"></iframe>  
+		  <iframe src="https://cloud.stylo.social/index.php/s/RCrzWD6DdKY63kC" frameBorder="0"
+		  position: fixed;
+		  background: #000;
+		  border: none;
+		  top: 0; right: 0;
+		  bottom: 0; left: 0;
+		  width: 100%;
+		  height: 100%;></iframe>  
 		</div>
 		
 	
