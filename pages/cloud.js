@@ -31,6 +31,7 @@ export default function Home() {
   return ( 
 	
 	<div>
+	 <Layout>
 	  <main>
 		<div>
 		  <iframe src="https://cloud.stylo.social/index.php/s/RCrzWD6DdKY63kC" frameBorder="0"></iframe>  
@@ -38,6 +39,7 @@ export default function Home() {
 		
 	
 	  </main>
+	  </Layout>
 	</div>
 
   );
