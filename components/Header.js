@@ -1,15 +1,7 @@
 import styles from "../styles/Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  ClerkProvider,
-  RedirectToSignIn,
-  SignedIn,
-  SignedOut,
-  UserProfile,
-  SignInButton,
-  UserButton
-} from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 
 // Header component using <SignedIn> & <SignedOut>.
