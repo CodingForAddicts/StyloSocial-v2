@@ -1,4 +1,5 @@
 import styles from "../styles/Header.module.css";
+import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { SignedIn, SignedOut, UserButton, SignInButton} from "@clerk/nextjs";
@@ -23,7 +24,7 @@ const Header = () => (
     <div className={styles.right}>
       <SignedOut>
         <SignInButton mode="modal">
-          <button className="btn">
+          <button className={styles.btn}>
             Sign in
           </button>
         </SignInButton>
