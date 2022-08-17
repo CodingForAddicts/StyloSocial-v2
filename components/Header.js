@@ -27,7 +27,12 @@ const Header = () => (
       </Link>
     </div>
     <div className={styles.right}>
-      <UserProfile />
+      <SignedOut>
+        <Link href="/sign-in">Se connecter</Link>
+      </SignedOut>
+      <SignedIn>
+        <UserButton userProfileURL="/user" afterSignOutAll="/" afterSignOutOneUrl="/" />
+      </SignedIn>
     </div>
   </header>
 );
