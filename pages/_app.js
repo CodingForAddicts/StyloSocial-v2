@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import Head from 'next/head'
 import Script from 'next/script'
 import Link from 'next/link'
-import { ClerkProvider, SignedIn, SignedOut } from '@clerk/nextjs'
+import { ClerkProvider, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import { useRouter } from 'next/router'
 
 /**

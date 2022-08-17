@@ -6,7 +6,8 @@ import * as THREE from "three";
 import Image from 'next/image'
 import Layout from '../components/Layout'
 import { withServerSideAuth } from "@clerk/nextjs/ssr";
-import { ClerkProvider, SignedIn, SignedOut } from "@clerk/nextjs";
+import Link from 'next/link'
+import { ClerkProvider, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 export const getServerSideProps = withServerSideAuth();
 
@@ -99,7 +100,7 @@ export default function Home() {
             </SignedOut>
             <SignedIn>
               <UserButton userProfileURL="/user" afterSignOutAll="/" afterSignOutOneUrl="/" />
-            </SignedIn>
+            </SignedIn> 
           </a>
       
         </div>
