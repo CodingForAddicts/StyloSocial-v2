@@ -30,7 +30,7 @@ export default function Home() {
   return ( 
 	
 	
-	<div className = { styles.container } >
+	<div  >
 	
 	<Head >
 	<title > StyloSocial < /title> 
@@ -40,7 +40,7 @@ export default function Home() {
 	</Head> 
 	<Layout >
 	
-	<main className = { styles.main } >
+	<main  >
 	<SignedOut >
 	<h1 className={styles.title}>
 	  Bienvenue sur <a href="https://stylo.social">StyloSocial!</a>
