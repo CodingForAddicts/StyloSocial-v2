@@ -26,6 +26,13 @@
   color: #e6eafb;
 }
 
+.btn:hover,
+.btn:focus,
+.btn:active {
+  color: #5700ff;
+  border-color: #6b1cb6;
+}
+
 .logo {
   display: flex;
   justify-content: center;
