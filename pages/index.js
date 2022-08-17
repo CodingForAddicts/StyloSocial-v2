@@ -6,7 +6,7 @@ import * as THREE from "three";
 import Image from 'next/image'
 import Layout from '../components/Layout'
 import { withServerSideAuth } from "@clerk/nextjs/ssr";
-import { SignedIn, SignedOut } from "@clerk/nextjs";
+import { ClerkProvider, SignedIn, SignedOut } from "@clerk/nextjs";
 
 export const getServerSideProps = withServerSideAuth();
 
@@ -55,6 +55,7 @@ export default function Home() {
     };
   }, [vantaEffect]);
   return (
+    <ClerkProvider>
     <div ref={vantaRef}>
     <div className={styles.container} >
       <Head>
@@ -105,6 +106,7 @@ export default function Home() {
     </div>
     
     </div>
+    </ClerkProvider>
     
     
     
