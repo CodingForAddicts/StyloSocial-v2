@@ -57,11 +57,11 @@ export default function Home() {
   }, [vantaEffect]);
   return ( 
     
-    <div ref = { vantaRef } >
-    <div className = { styles.container } >
-    
-    <Head >
-    <title > StyloSocial < /title> 
+    <div ref={ vantaRef }>
+      <div className={ styles.container }>
+
+        <Head>
+          <title> StyloSocial < /title>
     <link rel = "icon"
     href = "/favicon.ico"/>
     
