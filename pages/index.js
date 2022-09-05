@@ -61,7 +61,7 @@ export default function Home() {
       <div className={ styles.container }>
 
         <Head>
-          <title> StyloSocial < /title>
+          <title> StyloSocial </title>
     <link rel = "icon"
     href = "/favicon.ico"/>
     
@@ -86,25 +86,25 @@ export default function Home() {
     <SignedIn >
   
     <a href="https://www.stylo.social/cloud" className={styles.card}>
-    <h2> Cloud ☁️ &rarr; </h2> <p>Cours & fiches</p> 
+    <h2> Cloud &rarr; </h2> <p>Cours & fiches</p> 
     </a>
     
     <a href="https://www.stylo.social/craft" className={styles.card}>
-    <h2> Craft 📑 &rarr; </h2> <p>Prise de notes collaborative</p> 
+    <h2> Craft &rarr; </h2> <p>Prise de notes collaborative</p> 
     </a>
     
 
     
     <a href="https://www.stylo.social/polls" className={ styles.card }>
-    <h2> Sondages 📊 &rarr;</h2> 
+    <h2> Sondages &rarr;</h2> 
     <p> Donnez votre avis !</p>
     </a>
     
 
     
-    <a href="https://www.stylo.social/links" className = { styles.cardB} >
-    <h2 > Liens 🔗 &rarr;</h2> 
-    <p> Manuels corrigés, manuels sans se connecter, contacts...</p> 
+    <a href="https://www.stylo.social/links" className = { styles.card} >
+    <h2 > Liens &rarr;</h2> 
+    <p> Manuels corrigés, contacts...</p> 
     </a>
   
 
