@@ -89,9 +89,6 @@ export default function Home() {
     <h2> Cloud &rarr; </h2> <p>Cours & fiches</p> 
     </a>
     
-    <a href="https://www.stylo.social/craft" className={styles.card}>
-    <h2> Craft &rarr; </h2> <p>Prise de notes collaborative</p> 
-    </a>
     
 
     
