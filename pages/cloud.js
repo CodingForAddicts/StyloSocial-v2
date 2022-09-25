@@ -32,9 +32,13 @@ export default function Home() {
 	
 	<div>
 	 <Layout>
+	 
 	  <main>
+	  <h1 className={styles.title}>
+		Cloud </a>
+	  </h1>
 		<div>
-		  <iframe src="https://drive.google.com/embeddedfolderview?id=16PoamPSJeksQWkiuPtgHl9IKgZhvVPpe#grid" frameBorder="0"></iframe>  
+		  <iframe allowtransparency = "true" src="https://drive.google.com/embeddedfolderview?id=16PoamPSJeksQWkiuPtgHl9IKgZhvVPpe#grid" frameBorder="0"></iframe>  
 		</div>
 		
 	
