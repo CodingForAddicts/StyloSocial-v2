@@ -85,24 +85,21 @@ export default function Home() {
     <div className = { styles.grid } >
     <SignedIn >
   
-    <a href="https://www.stylo.social/landing" className={styles.card}>
-    <h2> Cloud &rarr; </h2> <p>Passez par téléchargement instantané - 🚧 Maintenance 🚧</p> 
+    <a href="https://www.stylo.social/instant" className = { styles.card} >
+    <h2 > Instant cloud &rarr;</h2> 
+    <p> Les derniers cours avec téléchargment instantané </p> 
     </a>
     
-    
-
-    
-    <a href="https://www.stylo.social/polls" className={ styles.card }>
+    <a href="https://www.stylo.social/landing" className={ styles.card }>
     <h2> Sondages &rarr;</h2> 
     <p> Donnez votre avis !</p>
     </a>
     
-
-    
-    <a href="https://www.stylo.social/instant" className = { styles.card} >
-    <h2 > Téléchargement rapide &rarr;</h2> 
-    <p> Les derniers cours avec téléchargment instantané </p> 
+  <a href="https://www.tutorat-fermat.fr" className = { styles.card} >
+    <h2 > Tutorat &rarr;</h2> 
+    <p> Aider ou être Aidé </p> 
     </a>
+ 
   
 
     </SignedIn>
