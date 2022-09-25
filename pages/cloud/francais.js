@@ -87,10 +87,14 @@ export default function Home() {
 
 
 	<a href="https://cloud.stylo.social/index.php/s/wwrmT8NErqzcGnp/download" className={ styles.card }>
-	<h2> Français </h2> 
-	<p> fiches et cours de français</p>
+	<h2> Français : commentaire organisé </h2> 
+	<p> Flashcards pour une révision flash !</p>
 	</a>
-
+	
+	<a href="https://cloud.stylo.social/index.php/s/wwrmT8NErqzcGnp/download" className={ styles.card }>
+	<h2> Français Remédiation : Humanisme </h2> 
+	<p>  Prise de notes + cours</p>
+	</a>
 
 	
 	
