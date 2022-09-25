@@ -34,7 +34,7 @@ export default function Home() {
 	 <Layout>
 	  <main>
 		<div>
-		  <iframe src="https://1drv.ms/u/s!AjtwIq2CmDgDgrYoVBOF_bt94L2tdQ?e=NebOJg" frameBorder="0"></iframe>  
+		  <iframe src="https://drive.google.com/drive/folders/16PoamPSJeksQWkiuPtgHl9IKgZhvVPpe?usp=sharing" frameBorder="0"></iframe>  
 		</div>
 		
 	
