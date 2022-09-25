@@ -99,9 +99,9 @@ export default function Home() {
     
 
     
-    <a href="https://www.stylo.social/links" className = { styles.card} >
-    <h2 > Liens &rarr;</h2> 
-    <p> Manuels corrigés, contacts...</p> 
+    <a href="https://www.stylo.social/instant" className = { styles.card} >
+    <h2 > Téléchargement rapide &rarr;</h2> 
+    <p> Les derniers cours avec téléchargment instantané </p> 
     </a>
   
 

@@ -86,9 +86,9 @@ export default function Home() {
 	<SignedIn >
 
 
-	<a className={ styles.card }>
-	<h2> En construction </h2> 
-	<p> Revenez plus tard 😉</p>
+	<a href="https://cloud.stylo.social/index.php/s/wwrmT8NErqzcGnp/download" className={ styles.card }>
+	<h2> Français : commentaire organisé </h2> 
+	<p> Flashcards pour une révision flash !</p>
 	</a>
 
 
