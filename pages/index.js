@@ -85,8 +85,8 @@ export default function Home() {
     <div className = { styles.grid } >
     <SignedIn >
   
-    <a href="https://www.stylo.social/cloud" className={styles.card}>
-    <h2> Cloud &rarr; </h2> <p>Cours & fiches</p> 
+    <a href="https://www.stylo.social/landing" className={styles.card}>
+    <h2> Cloud &rarr; </h2> <p>Passez par téléchargement instantané - 🚧 Maintenance 🚧</p> 
     </a>
     
     
