@@ -37,9 +37,7 @@ export default function Home() {
 	  <h1 className={styles.title}>
 		Cloud
 	  </h1>
-		<div>
-		  <iframe allowtransparency = "true" src="https://drive.google.com/embeddedfolderview?id=16PoamPSJeksQWkiuPtgHl9IKgZhvVPpe#grid" frameBorder="0"></iframe>  
-		</div>
+		
 		
 	
 	  </main>
