@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-image: url("/public/gradient.jpg");
+  background-image: url("/gradient.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 100%;
