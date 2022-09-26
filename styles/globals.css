@@ -22,7 +22,6 @@ a {
 
 iframe{
   position: fixed;
-  background: #000;
   border: none;
   top: 0; right: 0;
   bottom: 0; left: 0;
@@ -32,10 +31,9 @@ iframe{
 
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+  html, 
   body {
+    color-scheme: dark;
     color: white;
     background: black;
   }
