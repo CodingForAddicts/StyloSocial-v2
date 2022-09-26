@@ -86,7 +86,7 @@ export default function Home() {
 	<SignedIn >
 
 
-	<a href="https://cloud.stylo.social/index.php/s/wwrmT8NErqzcGnp/download" className={ styles.card }>
+	<a href="https://www.craft.do/s/MPgfwIvxOZIJAu" className={ styles.card }>
 	<h2> Histoire : Dernier chapitre </h2> 
 	<p>  Cours complet - H1</p>
 	</a>
