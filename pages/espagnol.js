@@ -85,32 +85,11 @@ export default function Home() {
 	<div className = { styles.grid } >
 	<SignedIn >
 
-
-	<a href="https://www.stylo.social/francais" className={ styles.card }>
-	<h2> Français </h2> 
-	<p> Fiches et cours </p>
-	</a>
 	
-	<a href="https://www.stylo.social/espagnol" className={ styles.card }>
-	<h2> Espagnol </h2> 
-	<p> fiches, cours, bilans </p>
+	<a href="https://cloud.stylo.social/index.php/s/wwrmT8NErqzcGnp/download" className={ styles.card }>
+	<h2> Espagnol : Dernier cours </h2> 
+	<p>  Prise de note voc/cours/exos </p>
 	</a>
-	
-	<a href="https://www.stylo.social/es" className={ styles.card }>
-	<h2> ES </h2> 
-	<p> Cours et Bilans</p>
-	</a>
-	
-	<a href="https://www.stylo.social/histoire" className={ styles.card }>
-	<h2> Histoire </h2> 
-	<p> Fiches et cours</p>
-	</a>
-	
-	<a href="https://www.stylo.social/landing" className={ styles.card }>
-	<h2> Physique-Chimie </h2> 
-	<p> Fiches </p>
-	</a>
-
 
 	
 	
