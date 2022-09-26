@@ -95,6 +95,11 @@ export default function Home() {
 	<h2> Français Remédiation : Humanisme </h2> 
 	<p>  Prise de notes + cours</p>
 	</a>
+	
+	<a href="https://www.craft.do/s/6uEhe4qPLuVUBN" className={ styles.card }>
+	<h2> Français : Giton et Phédon </h2> 
+	<p>  Prise de notes </p>
+	</a>
 
 	
 	
