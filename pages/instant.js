@@ -27,37 +27,9 @@ export default withAuth((req, res) => {
 
 
 export default function Home() {
-  const [vantaEffect, setVantaEffect] = useState(0);
-  const vantaRef = useRef(null);
-  useEffect(() => {
-	if (!vantaEffect) {
-	  setVantaEffect(
-		FOG({
-		  el: vantaRef.current,
-		  THREE,
-		  mouseControls: true,
-		  touchControls: true,
-		  gyroControls: false,
-		  minHeight: 400.00,
-		  minWidth: 400.00,
-		  highlightColor: 0xff0068,
-		  midtoneColor: 0x1c28e8,
-		  lowlightColor: 0x5342b1,
-		  baseColor: 0xae65d2,
-		  blurFactor: 1,
-		  speed: 1.5,
-		  zoom: 0.5,
-		})
-	  );
-	}
-
-	return () => {
-	  if (vantaEffect) vantaEffect.destory();
-	};
-  }, [vantaEffect]);
   return ( 
 	
-	<div ref = { vantaRef } >
+
 	<div className = { styles.container } >
 	
 	<Head >
@@ -123,7 +95,6 @@ export default function Home() {
 
 	</Layout>
 
-	</div>
 	</div>
 
   );
