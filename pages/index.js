@@ -99,6 +99,11 @@ export default function Home() {
     <h2 > Tutorat &rarr;</h2> 
     <p> Aider ou être Aidé </p> 
     </a>
+    
+    <a href="https://www.stylo.social/instant" className = { styles.card} >
+    <h2 > Projet FermatShare &rarr;</h2> 
+    <p> L'application est en version pré-alpha, infos ici ! 😀 </p> 
+    </a>
  
   
 
