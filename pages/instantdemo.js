@@ -48,7 +48,7 @@ export default function Home() {
 
 	<div className = { styles.grid } >
 
-	<a href="https://www.stylo.social/espagnol" className={ styles.card }>
+	<a href="https://www.craft.do/s/RnGVDrbMn5rHSU" className={ styles.card }>
 	<h2> Espagnol demo </h2> 
 	<p> fiche numérique DEMO </p>
 	</a>
