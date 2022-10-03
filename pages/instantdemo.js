@@ -43,7 +43,7 @@ export default function Home() {
 	<main className = { styles.main } >
 
 	<h1 className={styles.title}>
-	  Projet cloud de Antoine pour le CVL </a>
+	  <a>Projet cloud de Antoine pour le CVL </a>
 	</h1>
 
 	<div className = { styles.grid } >
