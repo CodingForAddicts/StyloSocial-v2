@@ -102,7 +102,7 @@ export default function Home() {
     
     <a href="https://www.stylo.social/landing" className = { styles.card} >
     <h2 > Projet FermatShare &rarr;</h2> 
-    <p> L &apos application est en version pré-alpha, infos ici ! 😀 </p> 
+    <p> L &apos; application est en version pré-alpha, infos ici ! 😀 </p> 
     </a>
  
   
